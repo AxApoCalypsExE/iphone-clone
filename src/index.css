@@ -18,6 +18,31 @@ body {
   user-select: none;
 }
 
+/* Apply to the entire document or specific containers */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px; /* Height of the scrollbar for horizontal scrollbars */
+}
+
+/* Track (part of the scrollbar that's not the thumb) */
+::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Dark background for the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #555; /* Darker color for the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #333; /* Optional border for better visibility */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Slightly lighter color on hover */
+}
+
+
 canvas {
   touch-action: none;
 }
