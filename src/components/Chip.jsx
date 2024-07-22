@@ -13,11 +13,12 @@ const Chip = () => {
     gsap.from("#chip", {
       scrollTrigger: {
         trigger: "#chip",
+        toggleActions: "restart pause resume reset",
         start: "20% bottom",
       },
       opacity: 0,
       scale: 1.5,
-      duration: 2.25,
+      duration: 1.5,
       ease: "power2.inOut",
     });
 
